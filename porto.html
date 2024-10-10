@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADILWIBOWO_211011401336</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        :root {
+            --primary-color: #6B5BE2;
+            --secondary-color: #1A1B3A;
+            --text-color: #00FF94;
+            --accent-color: #00CCFF;
+            --highlight-color: #FFD700;
+        }
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            color: var(--text-color);
+            overflow-x: hidden;
+            background: var(--secondary-color);
+            background-image: 
+                linear-gradient(45deg, #2A2B4A 25%, transparent 25%),
+                linear-gradient(-45deg, #2A2B4A 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #2A2B4A 75%),
+                linear-gradient(-45deg, transparent 75%, #2A2B4A 75%);
+            background-size: 20px 20px;
+        }
+
+        .navbar {
+            background: rgba(26, 27, 58, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .navbar-brand {
+            color: var(--highlight-color);
+            font-size: 1.5rem;
+            text-shadow: 3px 3px var(--primary-color);
+        }
+
+        .jumbotron {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            padding: 6rem 0;
+        }
+
+        .jumbotron img {
+            border: 5px solid var(--accent-color);
+            box-shadow: 0 0 25px var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .jumbotron img:hover {
+            transform: scale(1.05);
+            animation: cyber-glowing 2s infinite;
+        }
+
+        @keyframes cyber-glowing {
+            0% { box-shadow: 0 0 25px var(--accent-color); }
+            50% { box-shadow: 0 0 50px var(--text-color); }
+            100% { box-shadow: 0 0 25px var(--accent-color); }
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--highlight-color);
+            text-shadow: 3px 3px var(--primary-color);
+            letter-spacing: 2px;
+        }
+
+        .lead {
+            color: var(--accent-color);
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .card {
+            border: 3px solid var(--primary-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(107, 91, 226, 0.3);
+            background: rgba(26, 27, 58, 0.9);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: 0 15px 30px var(--accent-color);
+        }
+
+        .card-body {
+            color: var(--text-color);
+        }
+
+        .card-img-container {
+            height: 250px; 
+            overflow: hidden;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--highlight-color);
+            text-shadow: 2px 2px var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        #kesimpulan {
+            background: var(--secondary-color);
+            padding: 5rem 0;
+        }
+
+        footer {
+            background: var(--primary-color);
+            padding: 1.5rem 0;
+        }
+
+        footer a {
+            color: var(--highlight-color);
+            text-decoration: none;
+            position: relative;
+        }
+
+        footer a::after {
+            content: '⚡';
+            position: absolute;
+            top: -10px;
+            right: -15px;
+            color: var(--text-color);
+        }
+
+        .cyber-line {
+            position: fixed;
+            background: var(--accent-color);
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .cyber-line.horizontal {
+            height: 1px;
+            width: 100%;
+            animation: scan-h 8s linear infinite;
+        }
+
+        .cyber-line.vertical {
+            width: 1px;
+            height: 100%;
+            animation: scan-v 8s linear infinite;
+        }
+
+        @keyframes scan-h {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100vh); }
+        }
+
+        @keyframes scan-v {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100vw); }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand">✧ E-COMMERCE ✧</a>
+        </div>
+    </nav>
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <img src="gambar/1.jpeg" alt="ADIL WIBOWO" width="200" class="rounded-circle img-thumbnail" data-aos="zoom-in">
+            <h1 class="display-4" data-aos="fade-up" data-aos-delay="200">★ ADIL WIBOWO ★</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="400">✦ 211011401336 ✦</p>
+        </div>
+    </section>
+
+    <section id="kesimpulan" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">KESIMPULAN</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-5 mb-4" data-aos="fade-right" data-aos-delay="200">
+                    <div class="p-4 bg-white rounded-lg shadow-sm">
+                        <p class="fs-5">1. Akses Sumber Daya yang Kaya: Perpustakaan menyediakan berbagai buku, jurnal, dan sumber daya digital yang relevan dengan e-commerce, mulai dari teori bisnis online, pemasaran digital, hingga teknologi e-commerce</p>
+                        <p class="fs-5">2. Lingkungan Belajar yang Tenang: Perpustakaan umumnya menawarkan suasana yang tenang dan minim gangguan, memungkinkan mahasiswa fokus dalam memahami konsep e-commerce yang kompleks seperti manajemen toko online, sistem pembayaran, dan logistik</p>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4" data-aos="fade-left" data-aos-delay="400">
+                    <div class="p-4 bg-white rounded-lg shadow-sm">
+                        <p class="fs-5">3. Dukungan Referensi dan Penelitian: Banyak perpustakaan menyediakan akses ke sumber daya akademis dan referensi yang valid untuk mendukung penelitian dalam bidang e-commerce, termasuk tren terbaru dan analisis industri</p>
+                        <p class="fs-5">4. Kolaborasi dengan Sumber Daya Tambahan: Di beberapa perpustakaan, tersedia akses ke perangkat lunak dan teknologi komputer yang dapat mendukung pemahaman tentang platform e-commerce atau analisis data e-commerce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">DOKUMENTASI</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/2.jpeg" class="card-img-top" alt="projects_1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/3.jpeg" class="card-img-top" alt="projects_2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/4.jpeg" class="card-img-top" alt="projects_3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/5.jpeg" class="card-img-top" alt="projects_4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/6.jpeg" class="card-img-top" alt="projects_5">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/7.jpeg" class="card-img-top" alt="projects_6">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/8.jpeg" class="card-img-top" alt="projects_7">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/9.jpeg" class="card-img-top" alt="projects_8">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="gambar/10.jpeg" class="card-img-top" alt="projects_9">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-center">
+        <p class="mb-0">Created with ♥ by <a href="https://www.instagram.com/wibowoadil/" class="text-white fw-bold">Adil Wibowo</a></p>
+    </footer>
+
+    <div class="sparkle" style="top: 10%; left: 10%;"></div>
+    <div class="sparkle" style="top: 20%; right: 20%;"></div>
+    <div class="sparkle" style="bottom: 15%; left: 30%;"></div>
+    <div class="sparkle" style="bottom: 25%; right: 15%;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        function createGlitch() {
+            const glitch = document.createElement('div');
+            glitch.style.position = 'fixed';
+            glitch.style.backgroundColor = '#00FF94';
+            glitch.style.width = Math.random() * 100 + 'px';
+            glitch.style.height = '1px';
+            glitch.style.left = Math.random() * 100 + 'vw';
+            glitch.style.top = Math.random() * 100 + 'vh';
+            glitch.style.opacity = '0.5';
+            glitch.style.zIndex = '999';
+            document.body.appendChild(glitch);
+            
+            setTimeout(() => {
+                glitch.remove();
+            }, 100);
+        }
+
+        setInterval(createGlitch, 2000);
+    </script>
+</body>
+</html>
